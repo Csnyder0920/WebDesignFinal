@@ -40,7 +40,7 @@ li a:hover {
 }
 
 /* Style the links inside the navigation bar */
-.tool-bar a {
+.tool-bar, a {
     float: center;
     display: block;
     color: #f2f2f2;
@@ -51,13 +51,27 @@ li a:hover {
 }
 
 /* Change the color of links on hover */
-.tool-bar a:hover {
+.tool-barl, a:hover {
     background-color: black;
     color: white;
 }
 
 /* Add a color to the active/current link */
-.tool-bar a.active {
-    background-color: #4CAF50;
-    color: Black;
+.tool-bar, a.active {
+  color: #4CAF50;
+}
+
+/* images */
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 150px;
 }

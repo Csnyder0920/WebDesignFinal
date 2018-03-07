@@ -75,3 +75,11 @@ img{
   width: 100%;
   height: 150px;
 }
+
+/* Backgrouund Images */
+body {
+  background-image: url("BG1.jpg");
+  background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+}

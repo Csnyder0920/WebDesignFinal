@@ -35,7 +35,7 @@ li a:hover {
 .tool-bar {
     background-color: transparent;
     overflow: hidden;
-    position: fixed;
+    position: bottom;
     bottom: 0;
     width: 100%;
 }
@@ -95,6 +95,13 @@ body {
 }
 
 .CarPage{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.RecipePage{
   margin-left: auto;
   margin-right: auto;
   padding-left: 150px;

@@ -38,17 +38,19 @@ li a:hover {
     position: bottom;
     bottom: 0;
     width: 100%;
+
 }
 
 /* Style the links inside the navigation bar */
 .tool-bar, a {
     float: center;
     display: block;
-    color: #f2f2f2;
+    color: White;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+
 }
 
 /* Change the color of links on hover */
@@ -59,7 +61,7 @@ li a:hover {
 
 /* Add a color to the active/current link */
 .tool-bar, a.active {
-  color: #4CAF50;
+  color: Red;
 }
 
 /* images */
@@ -79,7 +81,7 @@ img{
 
 /* Backgrouund Images */
 body {
-  background-image: url("FB.jpg");
+ background-image: url("FB.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;

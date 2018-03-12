@@ -19,6 +19,8 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    color: white;
+    float: center;
 }
 
 li a:hover {
@@ -31,7 +33,7 @@ li a:hover {
     background-color: Red;
 }
 
-/* Place the navbar at the bottom of the page, and make it stick */
+/* Place the navbar at the bottom of the page, and makes it stick */
 .tool-bar {
     background-color: transparent;
     overflow: hidden;
@@ -108,4 +110,59 @@ body {
   margin-right: auto;
   padding-left: 150px;
   padding-right: 150px;
+}
+
+/* text */
+h1{
+  color: White;
+  font-family: Impact;
+  text-align: center;
+}
+
+h2{
+  color: White;
+  font-family: Impact;
+  text-align: center;
+}
+
+h3{
+  color: White;
+  font-family: Impact;
+  text-align: center;
+}
+
+h4{
+  color: White;
+  font-family: Impact;
+  text-align: center;
+}
+
+h5{
+  color: White;
+  font-family: Impact;
+  text-align: center;
+}
+
+h6{
+  color: White;
+  font-family: Impact;
+  text-align: center;
+}
+
+marquee{
+  color: white;
+  font-family: Impact;
+  text-align: center;
+}
+
+th{
+  color: white;
+  font-family: Impact;
+  text-align: center;
+}
+
+td{
+  color: white;
+  font-family: Impact;
+  text-align: center;
 }

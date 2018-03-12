@@ -26,7 +26,9 @@ li a {
 li a:hover {
     background-color: #111;
     background-image: url("PELogo.png");
-
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
 }
 
 .active {
@@ -112,57 +114,96 @@ body {
   padding-right: 150px;
 }
 
+.BenderImg{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.BenderGif{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.BenderImgWords{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.BenderGifWords{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 150px;
+  padding-right: 150px;
+}
 /* text */
 h1{
   color: White;
-  font-family: Impact;
+  font-family: Arial Black;
   text-align: center;
 }
 
 h2{
   color: White;
-  font-family: Impact;
+  font-family: Arial Black;
   text-align: center;
 }
 
 h3{
   color: White;
-  font-family: Impact;
+  font-family: Arial Black;
   text-align: center;
 }
 
 h4{
   color: White;
-  font-family: Impact;
+  font-family: Arial Black;
   text-align: center;
 }
 
 h5{
   color: White;
-  font-family: Impact;
+  font-family: Arial Black;
   text-align: center;
 }
 
 h6{
   color: White;
-  font-family: Impact;
+  font-family: Arial Black;
   text-align: center;
 }
 
 marquee{
   color: white;
-  font-family: Impact;
+  font-family: Arial Black;
   text-align: center;
 }
 
 th{
   color: white;
-  font-family: Impact;
+  font-family: Arial Black;
   text-align: center;
 }
 
 td{
   color: white;
-  font-family: Impact;
+  font-family: Arial Black;
+  text-align: center;
+}
+
+ol{
+  color: white;
+  font-family: Arial Black;
+  text-align: center;
+}
+
+li{
+  color: white;
+  font-family: Arial Black;
   text-align: center;
 }

@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+
+
 /* sets the attributes for the navbar */
 ul {
     list-style-type: none;
@@ -7,6 +9,8 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: Transparent;
+    display: inline-block;
+       list-style-type: none;
 }
 
 li {
@@ -42,7 +46,8 @@ li a:hover {
     position: bottom;
     bottom: 0;
     width: 100%;
-
+    display: inline-block;
+       list-style-type: none;
 }
 
 /* Style the links inside the navigation bar */
@@ -77,6 +82,13 @@ img{
 }
 
 .center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 150px;
+}
+
+.navcenter{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -126,21 +138,9 @@ body {
   margin-right: auto;
   padding-left: 150px;
   padding-right: 150px;
+  padding-top: 50px;
 }
 
-.BenderImgWords{
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.BenderGifWords{
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 150px;
-  padding-right: 150px;
-}
 /* text */
 h1{
   color: White;
@@ -178,6 +178,12 @@ h6{
   text-align: center;
 }
 
+p{
+  color: White;
+  font-family: Arial Black;
+  text-align: center;
+}
+
 marquee{
   color: white;
   font-family: Arial Black;
@@ -200,10 +206,31 @@ ol{
   color: white;
   font-family: Arial Black;
   text-align: center;
+  list-style-image: url('PELogo1.png');
 }
 
 li{
   color: white;
   font-family: Arial Black;
   text-align: center;
+}
+/* sizes columns */
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }

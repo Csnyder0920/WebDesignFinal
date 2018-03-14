@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Displays the title -->
@@ -31,7 +32,9 @@
   </ul>
 </nav>
 
-
+<img src="images/Home1.png" alt="Home line 1">
+<img src="images/Home2.png" alt="Home line 2">
+<img src="images/Home3.png" alt="Home line 3">
 <!-- Displays the footer navbar -->
 <footer>
   <div class="tool-bar navcenter">
@@ -47,6 +50,136 @@
   <br>
   <p>Contact Me! &#9672; Email:Csnyder505@gmail.com</p>
   <p>West High School &#9672; Published:03/01/18 &#9672; Last Edited:03/13/18</p>
+  <p>By: Christian Snyder</p>
 </footer>
+
+<SCRIPT language=javascript>
+
+//Five Main Variables:
+
+var phrase = "JavaScriptBank.com"; //The phrase that is to wave behind the mouse.
+var bouncespeed = 10;      //With what intensity it waves.
+var speed = 1;             //How fast it waves (on a millisecond scale).
+var Xoffset = 15;          //Distance from mouse along X axis.
+var Yoffset = 15;          //Distance from mouse along Y axis.
+var color = "black";       //Color of text.
+
+
+//Variables that don't need to be changed:
+
+var letters = new Array();
+letters = phrase.split('');
+var object;
+var theta = 0;
+var MouseX = 0;
+var MouseY = 0;
+
+//The rest of the code, change at your own risk:
+
+document.onmousemove=mouse;
+
+function mouse(e) {
+MouseX = event.x + Xoffset;
+MouseY = event.y + Yoffset;
+window.status = "(" + MouseX + ", " + MouseY + ")";
+}
+
+function createobjects() {
+for (i=0; i < letters.length; i++) {
+document.write('<div id="letterwave" style="position:absolute;"><font color='+color+'>'+letters[i]+'</font></div>');
+}
+object = document.all('letterwave');
+objectmove();
+}
+
+function objectmove() {
+theta += 4;
+for (i=0; i<letters.length; i++) {
+object[i].style.top = MouseY;
+var leftnum = MouseX + i * 10 + (Math.sin(theta * Math.PI / 180 + (2 * Math.PI / object.length * i))) * bouncespeed;
+if (leftnum < 0) {
+leftnum *= -1;
+}
+object[i].style.left = leftnum;
+}
+if (theta > 360) {
+theta = 0;
+}
+setTimeout("objectmove();", speed);
+}
+
+// ENTER TEXT BELOW. CAN *NOT* INCLUDE NORMAL HTML CODE.
+var text='BLAST OFF!!!';
+
+var delay=40;                              // SPEED OF TRAIL
+var Xoff=0;                                // PIXEL COUNT FROM THE LEFT OF THE CURSOR (- VALUES GO TO LEFT)
+var Yoff=-30;                              // PIXEL COUNT FROM THE TOP OF THE CURSOR (- VALUES GO UP)
+var txtw=14;                               // AMOUNT OF PIXEL SPACE EACH CHARACTER OCCUPIES
+var beghtml='<font color="Red"><b>';   // OPTIONAL HTML CODE THAT EFFECTS WHOLE TEXT STRING SUCH AS FONT COLOR, SIZE, ETC.
+var endhtml='</b></font>';                 // END HTML CODE. MOSTLY USED IF ABOVE SETTING IS USED.
+
+//********** NO NEED TO EDIT BELOW HERE **********\\
+
+ns4 = (navigator.appName.indexOf("Netscape")>=0 && document.layers)? true : false;
+ie4 = (document.all && !document.getElementById)? true : false;
+ie5 = (document.all && document.getElementById)? true : false;
+ns6 = (document.getElementById && navigator.appName.indexOf("Netscape")>=0 )? true: false;
+var txtA=new Array();
+text=text.split('');
+var x1=0;
+var y1=-1000;
+var t='';
+
+for(i=1;i<=text.length;i++){
+t+=(ns4)? '<layer name="txt'+i+'" top="-100" left="0" width="'+txtw+'" height="1">' : '<div id="txt'+i+'" style="position:absolute; top:-100px; left:0px; height:1px; width:'+txtw+'; visibility:visible;">';
+t+=beghtml+text[i-1]+endhtml;
+t+=(ns4)? '</layer>' : '</div>';
+}
+document.write(t);
+
+function moveid(id,x,y){
+if(ns4)id.moveTo(x,y);
+else{
+id.style.left=x+'px';
+id.style.top=y+'px';
+}}
+
+function animate(evt){
+x1=Xoff+((ie4||ie5)?event.clientX+document.body.scrollLeft:evt.pageX);
+y1=Yoff+((ie4||ie5)?event.clientY+document.body.scrollTop:evt.pageY);
+}
+
+function getidleft(id){
+if(ns4)return id.left;
+else return parseInt(id.style.left);
+}
+
+function getidtop(id){
+if(ns4)return id.top;
+else return parseInt(id.style.top);
+}
+
+function getwindowwidth(){
+if(ie4||ie5)return document.body.clientWidth+document.body.scrollLeft;
+else return window.innerWidth+pageXOffset;
+}
+
+function movetxts(){
+for(i=text.length;i>1;i=i-1){
+if(getidleft(txtA[i-1])+txtw*2>=getwindowwidth()){
+moveid(txtA[i-1],0,-1000);
+moveid(txtA[i],0,-1000);
+}else moveid(txtA[i], getidleft(txtA[i-1])+txtw, getidtop(txtA[i-1]));
+}
+moveid(txtA[1],x1,y1);
+}
+
+window.onload=function(){
+for(i=1;i<=text.length;i++)txtA[i]=(ns4)?document.layers['txt'+i]:(ie4)?document.all['txt'+i]:document.getElementById('txt'+i);
+if(ns4)document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove=animate;
+setInterval('movetxts()',delay);
+}
+</SCRIPT>
   </body>
 </html>

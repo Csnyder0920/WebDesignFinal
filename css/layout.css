@@ -95,6 +95,13 @@ img{
   height: 150px;
 }
 
+.centerimg {
+    padding: 70px 0;
+    border: 3px solid green;
+    text-align: center;
+}
+
+
 /* Backgrouund Images */
 body {
  background-image: url("FB.jpg");
@@ -131,6 +138,7 @@ body {
   margin-right: auto;
   padding-left: 150px;
   padding-right: 150px;
+  align: left;
 }
 
 .BenderGif{
@@ -148,6 +156,17 @@ body {
   padding-right: 450px;
 }
 
+div.a {
+    font-size: 15px;
+}
+
+div.b {
+    font-size: large;
+}
+
+div.c {
+    font-size: 150%;
+}
 /* div boxes */
 .center1 {
     margin: auto;
@@ -257,6 +276,8 @@ li{
   font-family: Arial Black;
   text-align: center;
 }
+
+
 /* sizes columns */
 * {
     box-sizing: border-box;

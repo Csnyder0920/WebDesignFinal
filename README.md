@@ -9,3 +9,5 @@
   <li>Self Study</li>
   <li>Shoe Reviews</li>
 </ul>
+<h2>Link</h2>
+https://csnyder0920.github.io/WebDesignFinal/final_index.html

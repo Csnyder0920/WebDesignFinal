@@ -13,7 +13,7 @@
 https://csnyder0920.github.io/WebDesignFinal/final_index.html
 
 <h2>Validated Pages</h2>
-<img src="Downloads/Final_Index.html(Validated).png" alt="page 1">
+<img src="Images/Final_Index.html(Validated).png" alt="page 1">
 <img src="" alt="page 2">
 <img src="" alt="page 3">
 <img src="" alt="page 4">
